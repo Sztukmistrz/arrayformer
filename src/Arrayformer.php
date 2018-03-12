@@ -6,6 +6,6 @@ class Arrayformer{
 
 	public function help()
 	{
-		return 'ddddd';
+		return 'coś innego';
 	}
 }
