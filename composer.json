@@ -1,0 +1,51 @@
+{
+  "name": "sztukmistrz/arrayformer",
+  "description": "Create form from array.",
+  "license": "MIT",
+  "keywords": [
+    "Laravel"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Krzysztof Pułtorak",
+      "email": "admin2krzyztpfpultorak.pl"
+    }
+  ],
+  "require": {
+    "php": "7.1.7",
+    "illuminate/support": "~5.6.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.6.0",
+    "phpunit/phpunit": "~7.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Sztukmistrz\\Arrayformer\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Sztukmistrz\\Arrayformer\\Tests\\": "tests"
+    },
+    "files": [
+      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+    ]
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Sztukmistrz\\Arrayformer\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
